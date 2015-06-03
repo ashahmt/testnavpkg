@@ -1,0 +1,20 @@
+{
+  "name": "testnavpkg",
+  "version": "1.0.0",
+  "authors": [
+    "Alkesh Shah <ashah@markettrack.com>"
+  ],
+  "description": "test navigation package",
+  "keywords": [
+    "navigation"
+  ],
+  "license": "MIT",
+  "homepage": "markettrack.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

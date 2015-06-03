@@ -1,0 +1,84 @@
+﻿<div id="menu" style="position: fixed; z-index: 5;">
+    <nav>
+        <h2 class="main-menu-header">
+            <i class="fa fa-reorder btn btn-default btn-toolbar" style=" background: #e9edf0;" ng-click="sideMenu = !sideMenu" ng-class="{ active: sideMenu }"></i> 
+            <img src="../../../../Images/MT_logo_1.jpg" class="company-logo img-responsive" style="  width: 200px; padding-top: 8px; margin-top: 0;">
+        </h2>
+
+        <ul style="display: block !important;">
+            <li class="side-menu-sub-header">
+                <h3>Promotions</h3>
+            </li>
+
+            <!--<li ng-controller="BrandChooserFV as main">-->
+            <li>
+                <a href="" ng-click="main.openSplash()"><i class="ion-ios-lightbulb iconSpacing_ltr"></i>Solutions</a>
+            </li>
+
+            <li>
+                <a href="" ng-click="sideMenu = !sideMenu" ui-sref="featureVision" id="fullcollapse"><i class="ion-ios-home iconSpacing_ltr"></i>Promotions Home</a>
+            </li>
+            <li>
+                <a href="#"><i class="icon-Reports_Flash iconSpacing_ltr"></i>FlashReport</a>
+                <h2><i class="btn btn-default btn-toolbar icon-Reports_Flash"></i>FlashReport</h2>
+                <ul>
+                    <li>
+                        <a href="#">Flyers and SOV</a>
+                    </li>
+                    <li>
+                        <a href="#">Promoted Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Retailer Comparison</a>
+                    </li>
+                    <li>
+                        <a href="#">Manufacturer Comparison</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="#"><i class="icon-search iconSpacing_ltr"></i>Search Ads</a>
+                <h2><i class="btn btn-default btn-toolbar icon-search"></i>Search Ads</h2>
+                <ul>
+                    <li class="active">
+                        <a href="#">All Results</a>
+                    </li>
+                    <li>
+                        <a href="#">Calendar</a>
+                    </li>
+                    <li>
+                        <a href="#">Summary</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="" ui-sref="news"><i class="icon-reportwizard iconSpacing_ltr"></i>Advanced Search</a>
+            </li>
+            <li>
+                <a href="#"><i class="icon-Businessintel iconSpacing_ltr"></i>Retailer Activity</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa icon-piechart iconSpacing_ltr"></i>Category & Brand Share</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa icon-uploadmeasures iconSpacing_ltr"></i>Pricing & Promotions</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa icon-wrench iconSpacing_ltr"></i>Custom Reports</a>
+            </li>
+            <li class="side-menu-sub-header">
+                <h3>Additional Resources</h3>
+            </li>
+            <li class="not-entitled">
+                <a href="#"><i class="icon-onlinepricing iconSpacing_ltr"></i>Online Pricing</a>
+            </li>
+            <li class="not-entitled">
+                <a href="#"><i class="icon-posalignment iconSpacing_ltr"></i>POS</a>
+            </li>
+            <li class="not-entitled">
+                <a href="#"><i class="ion-waterdrop iconSpacing_ltr"></i>Brand Protection</a>
+            </li>
+        </ul>
+
+    </nav>
+</div>

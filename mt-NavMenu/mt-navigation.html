@@ -1,0 +1,25 @@
+﻿<div class="navigationmenu" style="position: fixed; z-index: 5;">
+    <nav>
+        <h2 class="main-menu-header">
+            <i class="fa fa-reorder btn btn-default btn-toolbar" style=" background: #e9edf0;" ng-click="sideMenu = !sideMenu" ng-class="{ active: sideMenu }"></i>
+            <img src="../../../../Images/MT_logo_1.jpg" class="company-logo img-responsive" style="  width: 200px; padding-top: 8px; margin-top: 0;">
+        </h2>
+        <ul style="display: block !important;">
+            <li ng-repeat="list in menujson track by $index" ng-include="getTemplate(list)" on-render-last>
+            </li>
+        </ul>
+    </nav>
+</div>
+<script type="text/ng-template" id="navigationsection">
+    <h3>{{list.title}}</h3>
+</script>
+<script type="text/ng-template" id="navigationmenu">
+    <a ng-href="{{list.link}}"><i class="fa iconSpacing_ltr" ng-class="list.icon"></i>{{list.title}}</a>
+</script>
+<script type="text/ng-template" id="navigationsubmenu">
+    <a ng-href="{{list.link}}"><i class="fa iconSpacing_ltr" ng-class="list.icon"></i>{{list.title}}</a>
+    <h2><i class="btn btn-default btn-toolbar fa" ng-class="list.icon"></i>{{list.title}}</h2>
+    <ul>
+        <li ng-repeat="list in list.items" ng-include="getTemplate(list)"></li>
+    </ul>
+</script>
